@@ -24,4 +24,23 @@ samp ul li{
     color: chartreuse;
     font-style: oblique;
     font-weight: 700;
+}    
+
+#boton{
+    background-color: rgb(105, 40, 40);
+    border: none;
+    font-size: 10px;
+    width: 500px;
+    padding: 10px;
+    color: blue;
+}
+.texto{
+    color: aqua;
+}
+
+.link{
+    color: blueviolet;
+}
+a:hover{
+    color: bisque;
 }
