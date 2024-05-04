@@ -14,3 +14,8 @@
   .nav-item.dropdown:hover .dropdown-menu .dropdown-item {
     text-decoration: underline; /* Subraya el texto cuando el mouse está sobre las opciones del menú desplegable */
   }
+  footer.text-center {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
