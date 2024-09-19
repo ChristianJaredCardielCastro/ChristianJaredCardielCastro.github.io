@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row">
+                <h1>Exámen de programación</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        1. ¿Primer pelicula del UCM?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="Iron-man" required> Iron Man </p>
+                            <p><input type="radio" name="pregunta1" value="Capitan-america" required> Capitan America </p>
+                            <p><input type="radio" name="pregunta1" value="Thor" required> Thor </p>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 mb-4">
+                        <p>
+                            2. <input type="text" name="pregunta2" required> es el hermano de Thor.
+                        </p>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        3. ¿Son villanos de los vengadores? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value="Magneto" > Magneto </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Ultron" > Ultron </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Thanos" > Thanos </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        4. ¿Cual gema del infinito tiene el teseracto?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta4" value="Mente" required> Mente </p>
+                            <p><input type="radio" name="pregunta4" value="Poder" required> Poder </p>
+                            <p><input type="radio" name="pregunta4" value="Espacio" required> Espacio </p>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 mb-4">
+                        <p>
+                            5. <input type="text" name="pregunta5" required> quedo 70 años congelado.
+                        </p>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        6. ¿Cual de estos personajes es un rey? (2 Respuestas)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta6[]" value="Pantera-Negra" > Pantera Negra </p>
+                            <p><input type="checkbox" name="pregunta6[]" value="Spider-Man" > Spider-Man </p>
+                            <p><input type="checkbox" name="pregunta6[]" value="Thor" > Thor </p>
+                        </div>
+                    </div>
+                        
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        7. ¿En que planeta nació thanos?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta7" value="Tierra" required> Tierra </p>
+                            <p><input type="radio" name="pregunta7" value="Titan" required> Titán </p>
+                            <p><input type="radio" name="pregunta7" value="Vormir" required> Vormir </p>
+                        </div>
+                    </div>
+
+                     
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        8. ¿Cual de estos personajes es un Guardian de la Galaxia? (2 Respuestas)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta8[]" value="Groot" > Groot </p>
+                            <p><input type="checkbox" name="pregunta8[]" value="Gamora" > Gamora </p>
+                            <p><input type="checkbox" name="pregunta8[]" value="Daredevil" > Daredevil </p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card p-4 mb-4">
+                        <p>
+                            9. <input type="text" name="pregunta9" required> es el verdadero nombre de Pantera Negra.
+                        </p>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        10.  ¿Cómo se llama el martillo de Thor?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta10" value="Mjolnir" required> Mjolnir </p>
+                            <p><input type="radio" name="pregunta10" value="Norn" required> Norn </p>
+                            <p><input type="radio" name="pregunta10" value="Aesir" required> Aesir </p>
+                            <p><input type="radio" name="pregunta10" value="Jonathan" required> Jonathan </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
+</body>
+</html>
