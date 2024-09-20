@@ -8,9 +8,16 @@
 </head>
 <body>
     <div class="container">
+        <div style='padding: 20px; border: 1px solid red;'>
         <form action="practica4.php" method="POST">
             <div class="row">
-                <h1>Exámen de programación</h1><hr>
+                <h1>Exámen del Universo Cinematográfico de Marvel</h1><hr>
+                <div class="card mb-4 p-2" class="from-control">
+                Nombre del alumno:
+                <input type="text" name="nombre" value="Christian Jared Cardiel Castro" class="from-control" required>
+                Grupo:
+                <input type="text" name="grupo" value="5AVP" class="from-control" required>
+                </div>
                     <div class="card mb-4">
                         <div class="card-header">
                         1. ¿Primer pelicula del UCM?
@@ -110,10 +117,10 @@
                             <p><input type="radio" name="pregunta10" value="Jonathan" required> Jonathan </p>
                         </div>
                     </div>
-
+                    <br><input type="submit" class="btn btn-primary" value="Terminar examen" style="background-color: red; font-family: Georgia, 'Times New Roman', Times, serif; color: black;" >
                 </div>
             </div>
-            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+            
         </form>
     </div>
 </body>

@@ -11,6 +11,13 @@
     $pregunta8 = $_POST["pregunta8"];
     $pregunta9 = $_POST["pregunta9"];
     $pregunta10 = $_POST["pregunta10"];
+    $nombre = $_POST["nombre"];
+    $grupo = $_POST["grupo"];
+
+    echo "<div style='padding: 20px; border: 1px solid red;'>";
+    echo "<h2>Alumno: ".$nombre. "</h2>";
+    echo "<h2>Grupo: ".$grupo. "</h2>"; 
+
 
     //Valido pregunta 1 ¿Primera pelicula del UCM?.
     echo "<h3> ¿Primera pelicula del UCM? </h3>";
@@ -168,7 +175,15 @@ if (count($pregunta8) == 2) {
          echo "<img src='tobby.gif' width='50px'><hr>";
      }
 
+     $calificacion = $aciertos * 10;
 
-    echo "CALIFICACIÓN FINAl = " . ($aciertos * 10) . "%";
-
-?>
+     if ($calificacion <= 5) {
+        echo "<span style='color: red;'>CALIFICACIÓN FINAL = " . $calificacion . "%</span>";
+    } elseif ($calificacion >= 7) {
+        echo "<span style='color: green;'>CALIFICACIÓN FINAL = " . $calificacion . "%</span>";
+    } else {
+        echo "CALIFICACIÓN FINAL = " . $calificacion . "%"; 
+         }
+        
+     
+    ?> 
